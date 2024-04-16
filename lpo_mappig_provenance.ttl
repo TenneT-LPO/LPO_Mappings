@@ -33,7 +33,7 @@ https://github.com/TenneT-LPO/LPO_Mappings
 	dcterms:creator <http://tennet.eu/person1#> ;
 	dcterms:creator <<http://tennet.eu/person2#> ;
 	dcterms:contributor "All contributing members of the LPO Mappings" ;
-	dcterms:contributor <<http://tennet.eu/person3#> ;
+	dcterms:contributor <http://tennet.eu/person3#> ;
     dcterms:license <https://creativecommons.org/licenses/by/1.0/> ;
     vann:preferredNamespacePrefix    "lpo_m" ;
     vann:preferredNamespaceUri <https://github.com/TenneT-LPO/LPO_Mappings/> .
