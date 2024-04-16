@@ -1,0 +1,52 @@
+@prefix lpo_m: <https://github.com/TenneT-LPO/LPO_Mappings/> .
+
+voaf:Vocabulary a owl:Class .
+dcterms:title a owl:AnnotationProperty .
+dcterms:description a owl:AnnotationProperty .
+dcterms:issued a owl:AnnotationProperty .
+dcterms:modified a owl:AnnotationProperty .
+dcterms:creator a owl:AnnotationProperty .
+dcterms:contributor a owl:AnnotationProperty .
+dcterms:license a owl:AnnotationProperty .
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+schema:domainIncludes a owl:AnnotationProperty .
+schema:rangeIncludes a owl:AnnotationProperty .
+vs:term_status a owl:AnnotationProperty .
+vcard:fn a owl:AnnotationProperty .
+schema:name a owl:AnnotationProperty .
+
+
+<https://github.com/TenneT-LPO/LPO_Mappings/> rdf:type owl:Ontology , voaf:Vocabulary ;
+    dcterms:modified    "2024-03-21T08:51:00"^^xsd:dateTime ;
+    dcterms:issued    "2024-04-10T12:00:00"^^xsd:dateTime ;
+    owl:versionInfo    "0.2.0" ;
+    owl:versionIRI <https://github.com/TenneT-LPO/LPO_Mappings/lpom-0.2.0> ;
+    owl:priorVersion <https://github.com/TenneT-LPO/LPO_Mappings/lpom-0.1.0> ;
+    dcterms:title    "LPO Mappings Ontology"@en ;
+    dcterms:description    """The LPO Mappings is a simple ontology defining the document sets and document kinds required for assets defined in the Kernel OTL.
+Changes since version 0.0.0 of the ontology are documented in:
+https://github.com/TenneT-LPO/LPO_Mappings
+"""@en ;
+	dcterms:creator "Michael Kracker" ;
+	dcterms:creator "Michiel van Wijk" ;
+	dcterms:creator <http://tennet.eu/person1#> ;
+	dcterms:creator <<http://tennet.eu/person2#> ;
+	dcterms:contributor "All contributing members of the LPO Mappings" ;
+	dcterms:contributor <<http://tennet.eu/person3#> ;
+    dcterms:license <https://creativecommons.org/licenses/by/1.0/> ;
+    vann:preferredNamespacePrefix    "lpo_m" ;
+    vann:preferredNamespaceUri <https://github.com/TenneT-LPO/LPO_Mappings/> .
+
+<<http://tennet.eu/person1#> a vcard:Individual , schema:Person; 
+	vcard:fn   "Michael Kracker" ;
+	schema:name "Michael Kracker" .
+ 
+<<http://tennet.eu/person2#> a vcard:Individual , schema:Person; 
+	vcard:fn    "Michiel van Wijk" ;
+	schema:name "Michael Kracker" .
+
+
+<<http://tennet.eu/person3#> a vcard:Individual , schema:Person ; 
+	vcard:fn    "Madhumitha Senthilvel" ;
+	schema:name "Madhumitha Senthilvel" .
